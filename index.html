@@ -20,21 +20,36 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="flex flex-col items-center justify-center h-screen text-center pt-20 bg-gray-900">
-    <div class="absolute inset-0 z-0">
-      <!-- Placeholder for background animation -->
-      <div class="cube-animation"></div>
+  
+<section id="home" class="flex flex-col md:flex-row items-center justify-center h-screen text-center pt-20 bg-gray-900 relative z-10 px-10 gap-24">
+  
+    <!-- Contenedor Derecho (Nombre + Ícono) -->
+    <div class="flex flex-col items-center">
+      <!-- Ícono -->
+      <div class="group transform transition duration-300 hover:scale-110">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="Programador" class="w-36 h-36 mb-4">
+      </div>
+  
+      <!-- Nombre -->
+      <h2 class="text-7xl font-black relative z-10 mt-10 transition-transform duration-300 transform hover:scale-110">Jordy Developer</h2>
+  
+      <!-- Descripción corta -->
+      <p class="text-lg mt-4 text-gray-300">INGENIERO DE SOFTWARE, FRONTEND & BACKEND</p>
+      <p class="text-lg mt-2 text-gray-300">"INTEGRANTE ESTRELLA DEL TEAM SAN PEDRO"</p>
     </div>
-    <!-- Ícono -->
-    <div class="group transform transition duration-300 hover:scale-110 relative z-10">
-        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="Programador" class="w-40 h-40 mb-6">
-    </div>
-    <h2 class="text-7xl font-black relative z-10 mt-10 transition-transform duration-300 transform hover:scale-110">Jordy Developer</h2>
 
-    <p class="text-lg mt-4 text-gray-300 relative z-10">INGENIERO DE SOFTWARE, FRONTEND & BACKEND.</p>
+    <!-- Contenedor Izquierdo (Descripción) -->
+    <div class="bg-gray-800 text-white p-6 rounded-2xl shadow-lg max-w-md text-left hover:scale-105 transition-transform duration-300">
+        <h3 class="text-2xl font-bold text-cyan-400 mb-2 transition-transform duration-300 transform hover:scale-110">// Sobre mí</h3>
+        <p class="text-gray-300 transition-transform duration-300 transform hover:scale-110">
+          ¡Hola! Soy Jordy-Dev, un apasionado ingeniero de software con experiencia en desarrollo Frontend y Backend.
+          Me encanta crear soluciones funcionales con diseño atractivo. ¡Siempre aprendiendo algo nuevo!
+        </p>
+      </div>
   </section>
+  
 
-  <!-- Sections (vacíos por ahora) -->
+  <!-- Sections -->
   <section id="expertise" class="min-h-[50vh] px-10 py-10 bg-gray-800">
     
     <h2 class="text-4xl font-bold mb-12 text-center text-white">// Habilidades</h2><br>
